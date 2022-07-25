@@ -21,6 +21,8 @@ colors=[[brightness,0,0],                    #red
     
 sleep_time_ms = 100000
 
+#REPLACE THE VARIABLES BELOW WITH YOUR OWN INFO IF NEEDED.
+
 #WIFI Credinentials
 WIFI_SSID     = '*******' #Enter the router name
 WIFI_PW = '*******' #Enter the router password
