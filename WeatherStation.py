@@ -53,6 +53,7 @@ def STA_Setup(WIFI_SSID,WIFI_PW):
     
  
 #Function used to read the AWS certifications keys and connect to aws IoT core
+#https://forum.micropython.org/viewtopic.php?t=5166
 def connect_mqtt():    
     global mqtt_client
 
