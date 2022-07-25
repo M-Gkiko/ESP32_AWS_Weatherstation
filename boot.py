@@ -1,3 +1,4 @@
+# boot.py as provided by @Freenove in their esp32 ultimate starter kit
 
 import uos as os
 import uerrno as errno
