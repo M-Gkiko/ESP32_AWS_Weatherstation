@@ -1,2 +1,8 @@
-# ESP32_AWS_Weatherstation
-Simple Indoors weatherstation using an ESP32, DHT11 sensor, AWS IoT Core, and AWS Timestream
+# Simple Weatherstation Using an ESP32, DHT11 Sensor, and AWS IoT Core
+
+- Author: _Marios Gkikopouli (mg223uk)_
+
+## Project Description
+
+- _TO DO_
+
