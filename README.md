@@ -4,5 +4,6 @@
 
 ## Project Description
 
-- _TO DO_
+![Architecture](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/main/AWS_IoT.png)
 
+- _TO DO_
