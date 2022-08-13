@@ -20,7 +20,7 @@ I Have to fix the Images will do later today
     + [RGBLED Lamp](#rgbled-lamp)
   * [Platform](#platform)
   * [The Code](#the-code)
-  * [Data Transmittion and Connectivity](#data-transmittion-and-connectivity)
+  * [Data Transmittion and Connectivity](#data-transmission-and-connectivity)
   * [Data Representation](#data-representation)
   * [Final Results](#final-results)
 
@@ -32,7 +32,7 @@ I Have to fix the Images will do later today
 
 As illustrated in the following image below this project aims to build a simple weather station that records temperature and humidity using an ESP32, a DHT11 sensor, and an RGB LED lamp for debugging. The measurements are then transmitted to AWS IoT Core utilizing WIFI and the MQTT transport protocol. Furthermore, the data is automatically stored into a Timestream database so that it can be quired and represented using graphs with Graphana.
 
-![Architecture](images\AWS_IoT.png)
+![Architecture](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/AWS_IoT.png)
 
 ## Objective
 
@@ -148,7 +148,7 @@ For the project the following kit was used which includes all needed components 
 
 For the code development of this project is done on a Windows machine using Thonny which is an open-source python IDE with a simple interface but great features making it a great option for beginners. To download and install Thonny follow the guide on the official website: https://thonny.org . The next step is to connect your ESP32 device to your computer using a USB cable. Afterward, it should be made sure that the computer has the CH340 driver installed. If the Driver is installed “USB-SERIAL CH340 (COMx)” should be visible under the port when going to "This PC" -> "Manage" -> "Device Manager" -> "Ports (COM & LPT)" as seen in the picture below.
 
-![COMx](images\port.jpg)
+![COMx](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/port.jpg)
 
 ---
 
@@ -167,7 +167,7 @@ Afterward, in order to run Python programs on ESP32, firmware must be burned fir
 
 Now the device is ready for files to be uploaded. Files can be uploaded from Thonny as shown in the next image.
 
-![uploading_files](images\uploading_files.png)
+![uploading_files](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/uploading_files.png)
 
 ## Circuit and Hardware Diagrams
 
@@ -175,7 +175,7 @@ This section contains circuit and hardware diagrams for the project. Diagrams fo
 
 ### DHT11
 
-![DHT11](images\DHT11.png)
+![DHT11](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/DHT11.png)
 
 1. VCC Power supply pin (within the range 3.3V-5.5V).
 2. SDA Data pin used to communicate with other devices.
@@ -184,19 +184,19 @@ This section contains circuit and hardware diagrams for the project. Diagrams fo
 
 ---
 
-![circuit_diagram_DHT11](images\circuit_diagram_DHT11.png)
+![circuit_diagram_DHT11](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/circuit_diagram_DHT11.png)
 
 ---
 
-![material_DHT11](images\material_DTH11.png)
+![material_DHT11](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/material_DTH11.png)
 
-![hardware_connection_DHT11](images\hardware_connection_diagram_DHT11.jpg)
+![hardware_connection_DHT11](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/hardware_connection_diagram_DHT11.jpg)
 
 
 
 ### RGBLED Lamp
 
-![RGBLED_lamp](images\RGBLED_Lamp.jpg)
+![RGBLED_lamp](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/RGBLED_Lamp.jpg)
 
 1. S Pin for input control signal.
 2. V Power suply pin (+3.5V~5.5V ).
@@ -204,13 +204,13 @@ This section contains circuit and hardware diagrams for the project. Diagrams fo
 
 ---
 
-![circuit_diagram_RGBLED](images\circuit_diagram_RGBLEDLamp.png)
+![circuit_diagram_RGBLED](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/circuit_diagram_RGBLEDLamp.png)
 
 ---
 
 ![material_RGBLED](images\material_RGBLED.jpg)
 
-![hardware_connection_RGBLED](images\hardware_connection_diagram_RGBLEDLamp.jpg)
+![hardware_connection_RGBLED](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/material_RGBLED.jpg)
 
 
 
@@ -221,7 +221,7 @@ This project's platform of choice is AWS cloud and specifically AWS IoT Core.  A
 
 ## The Code
 
-The project's code is written in micropython and it can be found in the WeatherStation.py file with some comments on what each function is supposed to do. Having said that there is one function that might be worth mentioning here because it has to do with connecting AWS IoT Core:
+The project's code is written in micropython and it can be found in the [WeatherStation.py](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/WeatherStation.py) file with some comments on what each function is supposed to do. Having said that there is one function that might be worth mentioning here because it has to do with connecting AWS IoT Core:
 
 The function below first opens and reads the certification and key files downloaded from the user AWS account and uses them as SSL_parameters to set up the MQTT_PORT (port) and together with the provided MQTT_CLIENT_ID (client id), MQTT_HOST (server) are used as an argument to establish a client connection to AWS IoT Core. If any of the previous arguments are incorrect or for some reason it cants establish a connection an exception is raised. 
 
@@ -351,26 +351,26 @@ All values received by AWS IoT Core are automatically saved to an AWS Timestream
 
 The data stored on the database are then queried using Graphana and the results are represented in the form of graphs as illustrated below.
 
-![Graphs](images\graphs.png)
+![Graphs](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/graphs.png)
 
-For more info on how to connect Timestream to AWS IoT Core and used Graphana to represent the data follow this picture guide [image_tutorial](TimeStream_Graphana_SetUp.md)
+For more info on how to connect Timestream to AWS IoT Core and used Graphana to represent the data follow this picture guide [here](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/TimeStream_Graphana_SetUp.md)
 
 ## Final Results
 
 The following pictures illustrate the ESP32 with all the parts put together.
 
-![Final_Result_1](images\microcontroller_1.jpg)
+![Final_Result_1](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/microcontroller_1.jpg)
 
-![Final_Result_2](images\microcontroller_2.jpg)
+![Final_Result_2](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/microcontroller_2.jpg)
 
 ---
 Messages arriving in AWS IoT Core
 
-![aws_mqqt](images\iot_mqqt.png)
+![aws_mqqt](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/iot_mqqt.png)
 
 ---
 Data representation in Graphana.
 
-![data_graph](images\graphs.png)
+![data_graph](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/graphs.png)
 
 The whole process of creating the project went smoothly and no major problems occurred during the development of either hardware or software. Some things that could have been done differently would be upgrading to a microcontroller with LORA support as well as updating the sensors to build a resilient enough outdoor weather station.
