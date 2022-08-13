@@ -68,9 +68,9 @@ The Credinentials as shown in the below pictrure will be used to in Graphana to 
 
 Create a time series dash board and add the following queries
 
-![TimeStream_Graphana_19](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/d7fc25878c6e38161db975ba503bfdc00bdd586f/images/TimeStream_Graphana_19.jpg)
+![TimeStream_Graphana_19](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/d7fc25878c6e38161db975ba503bfdc00bdd586f/images/TimeStream_Graphana_19.png)
 
-![TimeStream_Graphana_20](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/d7fc25878c6e38161db975ba503bfdc00bdd586f/images/TimeStream_Graphana_20.jpg)
+![TimeStream_Graphana_20](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/d7fc25878c6e38161db975ba503bfdc00bdd586f/images/TimeStream_Graphana_20.png)
 
 ```sql
 
