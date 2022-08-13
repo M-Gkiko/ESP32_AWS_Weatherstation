@@ -152,13 +152,13 @@ For the code development of this project is done on a Windows machine using Thon
 If not then the driver can be downloaded from here: https://www.wch-ic.com/search?q=CH340&t=downloads. 
 Afterward, in order to run Python programs on ESP32, firmware must be burned first. For this project version v1.18 (2022-01-17) .bin can be downloaded from the official micropython webpage here: https://micropython.org/download/esp32spiram/. Once the firmware is download Thonny is used to burn it into the ESP32 (must be connected with USB to the computer) as illustrated in the following images.
 
-![burning_firmware_1](images\burning_firmware_1.png)
+![burning_firmware_1](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/4b8f27e076b1bb11bee3eb00fe78a658997ba322/images/burning_firmware_1.png)
 
 
-![burning_firmware_2](images\burning_firmware_2.jpg)
+![burning_firmware_2](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/4b8f27e076b1bb11bee3eb00fe78a658997ba322/images/burning_firmware_2.jpg)
 
 
-![burning_firmware_3](images\burning_firmware_3.jpg)
+![burning_firmware_3](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/4b8f27e076b1bb11bee3eb00fe78a658997ba322/images/burning_firmware_3.jpg)
 
 ---
 
