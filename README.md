@@ -44,7 +44,7 @@ This IoT device is built to monitor the temperature and humidity of indoor envir
 
 ## Material
 
-For the project the following kit was used which includes all needed components and more https://bit.ly/3AtGip3. But below the same components are also given separately from different vendors when and if available.
+For the project the following Ultimate Starter Kit from Freenove was used which includes all needed components and more https://bit.ly/3AtGip3. But below the same components are also given separately from different vendors when and if available.
 
 <table class="tg">
 <thead>
