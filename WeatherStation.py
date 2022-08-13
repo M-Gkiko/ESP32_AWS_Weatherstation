@@ -11,7 +11,7 @@ np = neopixel.NeoPixel(pin, 8)
 
 DHT = dht.DHT11(machine.Pin(13))
 
-#brightness :0-255
+# Brightness :0-255
 brightness=10                                
 colors=[[brightness,0,0],                    #red
         [0,brightness,0],                    #green
@@ -21,17 +21,17 @@ colors=[[brightness,0,0],                    #red
     
 sleep_time_ms = 100000
 
-#REPLACE THE VARIABLES BELOW WITH YOUR OWN INFO IF NEEDED.
+# REPLACE THE VARIABLES BELOW WITH YOUR OWN INFO WHERE NEEDED.
 
-#WIFI Credinentials
+# WIFI Credinentials
 WIFI_SSID     = '*******' #Enter the router name
 WIFI_PW = '*******' #Enter the router password
 
-#AWS cert and key.
+# AWS cert and key.
 CERT_FILE = "/esp32_weatherStation.cert.pem"
 KEY_FILE = "/esp32_weatherStation.private.key"
 
-#AWS Endpoints
+# AWS Endpoints
 MQTT_CLIENT_ID = "basicPubSub"
 MQTT_PORT = 8883
 MQTT_TOPIC = "sdk/test/Python"
@@ -41,7 +41,7 @@ MQTT_HOST = "********" #ENTER YOUR MQTT HOST HERE
 
 mqtt_client = None
 
-#Function used to connect to wifi
+# Function used to connect to WIFI
 def STA_Setup(WIFI_SSID,WIFI_PW):
     print("Setup start\n")
     sta_if = network.WLAN(network.STA_IF)
@@ -54,8 +54,8 @@ def STA_Setup(WIFI_SSID,WIFI_PW):
     print('WIFI Connected!, IP address:', sta_if.ifconfig())
     
  
-#Function used to read the AWS certifications keys and connect to aws IoT core
-#https://forum.micropython.org/viewtopic.php?t=5166
+# Function used to read the AWS certifications and key files and connect to AWS IoT core
+# https://forum.micropython.org/viewtopic.php?t=5166
 def connect_mqtt():    
     global mqtt_client
 
@@ -79,7 +79,7 @@ def connect_mqtt():
         print('Cannot connect to MQTT: ' + str(e))
         raise
  
-#Function used to publish a message to AWS IoT core
+# Function used to publish a message to AWS IoT core
 def pub_msg(msg):
     global mqtt_client
     try:    
@@ -89,7 +89,7 @@ def pub_msg(msg):
         print("Exception publish: " + str(e))
         raise
 
-#Function to flash the neo leds
+# Function to flash the neo leds with a given color.
 def neo_leds(color):
     for j in range(0,8):
             np[j]=color
@@ -109,9 +109,10 @@ while True:
             connect_mqtt()
             neo_leds(colors[2])
             
+            # Measure temperature and humidity
             DHT.measure()
             
-            
+            # Cast measured data to JSON format so it can be sent.
             data = {"temperature": DHT.temperature(), "humidity": DHT.humidity()
                     , "device_id": "sensor_1"}
             msg = json.dumps(data)
