@@ -1,3 +1,6 @@
+
+I Have to fix the Images will do later today
+
 # Building a Simple Weatherstation Using an ESP32, DHT11 Sensor, and AWS IoT Core
 
 - Author: _Marios Gkikopouli (mg223uk)_
