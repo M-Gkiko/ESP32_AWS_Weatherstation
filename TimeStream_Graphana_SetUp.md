@@ -1,3 +1,16 @@
+## Table of Content
+
+- [Create Rule In AWS IoT Core](#create-rule-in-aws-iot-core)
+- [Create The TimeStream Database](#create-the-timestream-database)
+- [Create a Table In The TimeStream Database](#create-a-table-in-the-timestream-database)
+- [Finishing With the Rule](#finishing-with-the-rule)
+- [Creating New User For Acessing the Timestream Database Through Graphana](#creating-new-user-for-acessing-the-timestream-database-through-graphana)
+- [Connecting Graphana to Timestream Database](#connecting-graphana-to-timestream-database)
+- [Representing the Data](#representing-the-data)
+
+
+
+
 ## Create Rule In AWS IoT Core
 
 If you have followed the official tutorial by AWS on how to set up IoT Core with python the exact same steps as shown in the pictures can be followed.
