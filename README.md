@@ -44,17 +44,8 @@ This IoT device is built to monitor the temperature and humidity of indoor envir
 
 ## Material
 
-For the project the following kit was used which includes all needed components and more https://bit.ly/3AtGip3. But below the same components are given separately when from a different vendor when and if available.
+For the project the following kit was used which includes all needed components and more https://bit.ly/3AtGip3. But below the same components are also given separately from different vendors when and if available.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
 <table class="tg">
 <thead>
   <tr>
