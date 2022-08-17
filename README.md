@@ -160,7 +160,7 @@ Now the device is ready for files to be uploaded. Files can be uploaded from Tho
 
 ## Circuit and Hardware Diagrams
 
-This section contains circuit and hardware diagrams for the project. Diagrams for the DHT11 sensor and the RGB LED Lamp are separated for visibility and readability purposes. All information regarding how the electronics are connected, wiring, resistors, current, and voltage can be found in the diagrams. This setup is only for development purposes and is not to be used in production. The complete real-life setup containing both can be viewed in the section Final results [final](## Final Results)
+This section contains circuit and hardware diagrams for the project. Diagrams for the DHT11 sensor and the RGB LED Lamp are separated for visibility and readability purposes. All information regarding how the electronics are connected, wiring, resistors, current, and voltage can be found in the diagrams. This setup is only for development purposes and is not to be used in production. The complete real-life setup containing both can be viewed in the section Final results [link](#final-results)
 
 ### DHT11
 
@@ -197,9 +197,9 @@ This section contains circuit and hardware diagrams for the project. Diagrams fo
 
 ---
 
-![material_RGBLED](images\material_RGBLED.jpg)
+![material_RGBLED](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/9a1b3535833003a298e29271ab8333b5d6a8f5b1/images/material_RGBLED.jpg)
 
-![hardware_connection_RGBLED](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/material_RGBLED.jpg)
+![hardware_connection_RGBLED](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/9a1b3535833003a298e29271ab8333b5d6a8f5b1/images/hardware_connection_diagram_RGBLEDLamp.jpg)
 
 
 
