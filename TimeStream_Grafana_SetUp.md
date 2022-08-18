@@ -1,3 +1,5 @@
+Follow this link to set up Grafana cloud https://grafana.com/
+
 ## Table of Content
 
 - [Create Rule In AWS IoT Core](#create-rule-in-aws-iot-core)
