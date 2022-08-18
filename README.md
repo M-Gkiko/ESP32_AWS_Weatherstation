@@ -346,7 +346,7 @@ The data stored on the database are then queried using Grafana Cloud and the res
 
 ![Graphs](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/graphs.png)
 
-For more info on how to connect Timestream to AWS IoT Core and use Grafana Cloud to represent the data follow this picture guide [here](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/TimeStream_Graphana_SetUp.md)
+For more info on how to connect Timestream to AWS IoT Core and use Grafana Cloud to represent the data follow this picture guide [here](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/08158b22d2ee5177bca8ffdfbcb81605da573078/TimeStream_Grafana_SetUp.md)
 
 ## Final Results
 
