@@ -2,7 +2,7 @@
 # Building a Simple Weatherstation Using an ESP32, DHT11 Sensor, and AWS IoT Core
 
 - Author: _Marios Gkikopouli (mg223uk)_
-- Topics: _IoT, ESP32, AWS, Cloud_
+- Topics: _IoT, ESP32, AWS, Cloud, Grafana_
 - Date: _25-07-2022_
 - Approximate Time to Complete: _3 - 4 hours_
 
@@ -28,7 +28,7 @@
 
 ## Project Overview
 
-As illustrated in the following image below this project aims to build a simple weather station that records temperature and humidity using an ESP32, a DHT11 sensor, and an RGB LED lamp for debugging. The measurements are then transmitted to AWS IoT Core utilizing WIFI and the MQTT transport protocol. Furthermore, the data is automatically stored into a Timestream database so that it can be quired and represented using graphs with Graphana.
+As illustrated in the following image below this project aims to build a simple weather station that records temperature and humidity using an ESP32, a DHT11 sensor, and an RGB LED lamp for debugging. The measurements are then transmitted to AWS IoT Core utilizing WIFI and the MQTT transport protocol. Furthermore, the data is automatically stored into a Timestream database so that it can be quired and represented using graphs with Grafana Cloud.
 
 ![Architecture](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/AWS_IoT.png)
 
@@ -342,11 +342,11 @@ After each message publishing or in other words data transmission the client dev
 
 All values received by AWS IoT Core are automatically saved to an AWS Timestream database. The data stored can be preserved until storage space runs out or some other policy of choice (storage can auto-scale depending on the plan y choose). Older data is automatically backed up into a separate magnetic store despite that, you can still query both recent and historical data from the same tools and interfaces since the timestreams query engine combines recent and historical data without having to specify the data location. There are plenty of other options concerning data persistence when setting up the Timestream but for this project, the most minimal options were selected to keep the costs as low as possible or free tier. There are several other reasons why Timestream is the database of choice for this project. Timestream is a fast, encrypted, serverless, and auto-scalable time series database that doesn't require any infrastructure management. It can quickly analyze time series data with SQL which makes it great for IoT applications. Moreover, it has the option to identify data trends and patterns in near real-time.
 
-The data stored on the database are then queried using Graphana and the results are represented in the form of graphs as illustrated below.
+The data stored on the database are then queried using Grafana Cloud and the results are represented in the form of graphs as illustrated below.
 
 ![Graphs](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/graphs.png)
 
-For more info on how to connect Timestream to AWS IoT Core and used Graphana to represent the data follow this picture guide [here](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/TimeStream_Graphana_SetUp.md)
+For more info on how to connect Timestream to AWS IoT Core and use Grafana Cloud to represent the data follow this picture guide [here](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/TimeStream_Graphana_SetUp.md)
 
 ## Final Results
 
@@ -362,7 +362,7 @@ Messages arriving in AWS IoT Core
 ![aws_mqqt](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/iot_mqqt.png)
 
 ---
-Data representation in Graphana.
+Data representation in Grafana.
 
 ![data_graph](https://github.com/M-Gkiko/ESP32_AWS_Weatherstation/blob/77947f48cad9f2893f39b9f27e65d26aa45eba08/images/graphs.png)
 
